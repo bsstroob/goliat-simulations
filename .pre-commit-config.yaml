@@ -14,7 +14,7 @@ repos:
     exclude: ^(\.vscode/)
 
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.15.0
+  rev: v2.16.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix]
@@ -22,7 +22,7 @@ repos:
     args: [--autofix, --trailing-commas]
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.14.3
+  rev: v0.16.6
   hooks:
   - id: ruff-format
     exclude: ^(analysis/|osparc_api_example/)
@@ -31,18 +31,18 @@ repos:
     exclude: ^(analysis/|osparc_api_example/|docs/)
 
 - repo: https://github.com/RobertCraigie/pyright-python
-  rev: v1.1.407
+  rev: v1.1.411
   hooks:
   - id: pyright
 
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.4.1
+  rev: v2.4.3
   hooks:
   - id: codespell
     additional_dependencies:
     - tomli
 
 - repo: https://github.com/astral-sh/uv-pre-commit
-  rev: 0.9.7
+  rev: 0.12.10
   hooks:
   - id: uv-lock
